@@ -1,6 +1,6 @@
 #include <stdio.h>
-init man(void)
+int man(void)
 {
-  puts ("\"Programming is like building a multilingual puzzle");
+  puts("\"Programming is like building a multilingual puzzle");
   return (0);
 }
