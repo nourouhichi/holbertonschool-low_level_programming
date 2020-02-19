@@ -1,15 +1,21 @@
 #include "holberton.h"
 /**
- * puts2 - check the code for Holberton School students.
- * @str : char
+ * rev_string - check the code for Holberton School students.
+ * @s : char
  * Return: Always 0.
  */
-void puts2(char *str)
+void rev_string(char *s)
 {
-int i x;
-for (i = 0; str[i] != '\0'; i++)
-;
-for (x = 0; x <= i - 1; c = c + )2
-_putchar(str[x]);
-_putchar('\n');
+char q[509];
+int i = 0, j;
+while (s[i] != '\0')
+{
+q[i] = s[i];
+i++;
+}
+i--;
+for (j = i; j >= 0; j--)
+{
+s[i - j] = q[j];
+}
 }
