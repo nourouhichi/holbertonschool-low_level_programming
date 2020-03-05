@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * _strchr - cheks the code for jolberton students
+ * _strchr - cheks the code for holberton students
  *@s:char
  *@c:c
  *Return:char
