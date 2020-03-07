@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *factorial - cheks the code for holberton students
+ * factorial - cheks the code for holberton students
  *@n : int
- *Return : int
+ *Return: int
  */
 int factorial(int n)
 {
