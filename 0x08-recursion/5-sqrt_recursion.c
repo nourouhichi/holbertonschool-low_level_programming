@@ -15,7 +15,7 @@ if ((y * y) == x)
 {
 return (y);
 }
-return (square(x, y+1));
+return (square(x, y + 1));
 }
 /**
  *_sqrt_recursion - cheks
