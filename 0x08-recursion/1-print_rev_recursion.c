@@ -4,27 +4,11 @@
 * @s : char
 * Return: Always 0.
 */
-
-
-void func(char *r)
-{
-if (*r != '\0' )
-{
-r++;
-}
-}
-
 void _print_rev_recursion(char *s)
 {
-if (*s != '\0' )
+if (*s != '\0')
 {
-s++;
-func(s);
-} 
-if (*s == '\0')
-{
-s--;
+_print_rev_recursion(s + 1);
 _putchar(*s);
 }
-_print_rev_recursion(s);
 }
