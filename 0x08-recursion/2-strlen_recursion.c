@@ -1,5 +1,8 @@
 #include "holberton.h"
 /**
+ * _strlen_recursion - cheks the code for holberton school students
+ *@s: char
+ *Return: char
  */
 int _strlen_recursion(char *s)
 {
