@@ -1,0 +1,10 @@
+#include "holberton.h"
+/**
+ *_strdup - cheks the code for the holberton students
+ *@str:char
+ *Return:char
+ */
+char *_strdup(char *str)
+{
+
+}
