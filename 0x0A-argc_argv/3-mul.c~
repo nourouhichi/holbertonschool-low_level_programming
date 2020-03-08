@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ */
+int main(int argc, char *argv[])
+{
+if (argc == 3)
+{
+int x;
+x = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", x);
+return (0);
+}
+else
+{
+printf("ERROR\n");
+return (1);
+}
+}

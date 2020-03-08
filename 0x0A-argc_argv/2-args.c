@@ -1,13 +1,16 @@
 #include <stdio.h>
 /**
  *main - cheks
- *@argc: number
- *@argv: array
+ *@argc:nymber
+ *@argv:array
  *Return: 0
  */
 int main(int argc, char *argv[])
 {
-printf("%s\n", argv[0]);
-(void)argc;
+int i;
+for (i = 0; i < argc; i++)
+{
+printf("%s\n", argv[i]);
+}
 return (0);
 }
