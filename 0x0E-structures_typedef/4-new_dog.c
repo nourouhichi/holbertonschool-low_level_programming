@@ -35,13 +35,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	/* locate space in memory for name */
-	dog_liza->name = malloc(LEN(name));
+	dog_liza->name = malloc(LEN(name) + 1);
 	if (dog_liza->name == NULL)
 	{
 		free(dog_liza);
 		return (NULL);
 	}
-	dog_liza->owner = malloc(LEN(owner));
+	dog_liza->owner = malloc(LEN(owner) + 1);
 
 	if (dog_liza->owner == NULL)
 	{
