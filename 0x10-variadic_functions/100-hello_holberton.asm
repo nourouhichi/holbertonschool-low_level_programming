@@ -1,5 +1,5 @@
 section .data
-message fb "Hello, Holberton", 10
+message db "Hello, Holberton", 10
 section .text
 global main
 main:
