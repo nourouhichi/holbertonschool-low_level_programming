@@ -16,7 +16,7 @@ char *string;
 va_start(p, n);
 for (i = 0; i < n; i++)
 {
-string = va_arg(p, char *);
+string = va_arg(p, char*);
 if (p != NULL)
 printf("%s", string);
 else
