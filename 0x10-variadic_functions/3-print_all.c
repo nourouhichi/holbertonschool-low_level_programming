@@ -50,8 +50,13 @@ va_list p;
 int i = 0;
 char x;
 char *nothing;
+while (format == NULL)
+{
+printf("\n");
+return;
+}
 va_start(p, format);
-while (format[i] != '\0' && format != NULL)
+while (format[i] != '\0')
 {
 switch (format[i])
 {
