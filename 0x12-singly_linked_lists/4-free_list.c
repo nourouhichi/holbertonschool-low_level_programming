@@ -6,10 +6,10 @@
 void free_list(list_t *head)
 {
 list_t *bowl;
-while(head != NULL)
+while (head != NULL)
 {
 bowl = head;
-free (bowl);
 head = head->next;
+free(bowl);
 }
 }
