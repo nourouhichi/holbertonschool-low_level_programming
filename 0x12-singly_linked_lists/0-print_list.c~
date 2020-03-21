@@ -1,0 +1,9 @@
+#include "lists.h"
+/**
+ */
+size_t print_list(const list_t *h)
+{
+  if (list_t_str == NULL)
+    printf("[0] (nil)\n");
+  for (i = 1; list_t_str[i] != '\0'; i ++)
+
