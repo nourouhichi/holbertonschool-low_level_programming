@@ -10,6 +10,7 @@ while (head != NULL)
 {
 bowl = head;
 head = head->next;
+free(bowl->str);
 free(bowl);
 }
 }
