@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *add_nodeint_end - adds a node at the end 
+ *add_nodeint_end - adds a node at the end
  *@head:pointer
  *@n:int
  *Return: listint_t
@@ -18,7 +18,7 @@ new_node->next = NULL;
 if (*head == NULL)
 {
 *head = new_node;
-return (new_node);
+return (*head);
 }
 road_runner = *head;
 while (road_runner->next != NULL)
@@ -26,5 +26,5 @@ while (road_runner->next != NULL)
 road_runner = road_runner->next;
 }
 road_runner->next = new_node;
-return (new_node);
+return (*head);
 }
