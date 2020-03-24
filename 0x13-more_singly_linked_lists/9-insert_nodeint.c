@@ -19,6 +19,12 @@ return (NULL);
 new_node->n = n;
 new_node->next = NULL;
 road_runner = *head;
+if (road_runner == NULL)
+{
+*head = new_node;
+new_node->next = NULL;
+return (new_node);
+}
 if (idx == 0)
 {
 new_node->next = *head;
