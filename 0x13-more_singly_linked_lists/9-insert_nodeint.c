@@ -31,7 +31,7 @@ new_node->next = *head;
 *head = new_node;
 return (new_node);
 }
-while ((road_runner != NULL) && (i < (idx - 1)))
+while ((road_runner != NULL) && (i != (idx - 1)))
 {
 road_runner = road_runner->next;
 i++;
