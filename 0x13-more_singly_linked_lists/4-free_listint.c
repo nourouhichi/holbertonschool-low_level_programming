@@ -7,7 +7,9 @@ void free_listint(listint_t *head)
 {
 listint_t *bowl;
 if (head == NULL)
-return (NULL);
+return;
+while(head != NULL)
+{
 bowl = head;
 head = head->next;
 free(bowl);
