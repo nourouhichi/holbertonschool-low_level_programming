@@ -6,15 +6,15 @@
  */
 char *_strdup(char *str)
 {
-int i;
+int i = 0;
 char *clone;
 if (str == NULL)
 return (NULL);
 for (i = 0; str[i] != '\0';)
 {
 i++;
-} 
-clone = (char *) malloc(sizeof(char) * i);
+}
+clone = malloc(sizeof(char) * i);
 if (clone == NULL)
 return (NULL);
 for (i = 0; str[i] != '\0'; i++)
