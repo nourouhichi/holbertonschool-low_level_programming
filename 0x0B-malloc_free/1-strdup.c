@@ -7,6 +7,8 @@
 int size(char *str)
 {
 int i;
+if (str == NULL)
+return(0);
 for (i = 0; str[i] != '\0';)
 {
 i++;
@@ -25,7 +27,10 @@ char *clone = malloc(sizeof(char) * i);
 if (clone == NULL)
 return (NULL);
 if (str == NULL)
+{
+free(clone);
 return (NULL);
+}
 for (i = 0; str[i] != '\0'; i++)
 {
 clone[i] = str[i];
