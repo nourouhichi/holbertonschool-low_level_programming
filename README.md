@@ -1,6 +1,6 @@
-# ___________________ PROJECTS ___________________
+# ____________________ PROJECTS ____________________
 ![](https://images.squarespace-cdn.com/content/v1/5a4bfe8bf09ca4228ceca3b7/1539139199598-ANH454IHZI1OKWONKRXY/ke17ZwdGBToddI8pDm48kNp8pt3EdxuCXc7Btqw6aCUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc582kKJI7R4YoEbaG0ar5y9SuJlHH4BCe-KXYJFHtaWtSg47dcfuoHTlsl7xAkdij/logo.jpg?format=2500w)
-
+## Low-level programming & Algorithm - Hatching out 
 ### 0x00. C - Hello, World 
 ### 0x01. C - Variables, if, else, while 
 ### 0x03. C - Debugging 
