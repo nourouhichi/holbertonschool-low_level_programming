@@ -18,7 +18,7 @@ if (fd1 == -1)
 exit(98); }
 fd2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 if (fd1 == -1)
-{dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
+{dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99); }
 while ((rd = read(fd1, buff, 1024)) != 0)
 {
@@ -27,7 +27,7 @@ if (rd == -1)
 exit(98); }
 wr = write(fd2, buff, rd);
 if (wr == -1)
-{dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
+{dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99); }
 }
 if (close(fd1) == -1)
