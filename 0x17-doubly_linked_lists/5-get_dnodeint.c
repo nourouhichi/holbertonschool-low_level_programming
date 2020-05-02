@@ -7,11 +7,11 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int i;
+	unsigned int i = 0;
 	dlistint_t *roadrunner;
 
 	if (!head)
-		return (NULL);
+		return (0);
 	roadrunner = head;
 	while (i < index)
 	{
