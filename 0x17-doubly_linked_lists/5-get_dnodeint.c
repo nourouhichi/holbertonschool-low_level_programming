@@ -8,16 +8,18 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int i;
+	dlistint_t *roadrunner;
 
 	if (!head)
 		return (NULL);
+	roadrunner = head;
 	while (i < index)
 	{
-		if (!(head->next))
+		if (!(roadrunner->next))
 			return (NULL);
-		head = head->next;
+		roadrunner = roadrunner->next;
 		i++;
 	}
-	return (head);
+	return (roadrunner);
 }
 
