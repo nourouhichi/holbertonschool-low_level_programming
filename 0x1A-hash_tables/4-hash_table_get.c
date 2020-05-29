@@ -10,7 +10,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int index = key_index((const unsigned char *)key, ht->size);
 	hash_node_t *wanted = ht->array[index];
 
-	if (!ht || !key || !wanted)
+	if (!ht || !key || !wanted || !*key)
 		return (NULL);
 	while (wanted)
 	{
