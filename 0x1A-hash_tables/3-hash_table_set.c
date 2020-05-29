@@ -29,6 +29,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		new_hash_node->next = roadrunner;
 		new_hash_node->key = strdup(key);
 		new_hash_node->value = strdup(value);
+		if (!new_hash_node->key || !new_hash_node->value)
+			return (0);
 		return (1);
 	}
 	new_hash_node = malloc(sizeof(hash_node_t));
@@ -36,6 +38,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	new_hash_node->key = strdup(key);
 	new_hash_node->value = strdup(value);
+	if (!new_hash_node->key || !new_hash_node->value)
+		return (0);
 	new_hash_node->next = ht->array[index];
 	ht->array[index] = new_hash_node;
 	return (1);
