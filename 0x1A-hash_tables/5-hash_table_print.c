@@ -5,15 +5,16 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	hash_node_t *roadrunner = ht->array[0];
+	hash_node_t *roadrunner;
 	unsigned long int index;
 	int test = 0;
 
 	if (!ht)
 		return;
 	printf("{");
-	for (index = 1; index < ht->size; index++)
+	for (index = 0; index < ht->size; index++)
 	{
+		roadrunner = ht->array[index];
 		while (roadrunner)
 		{
 			if (test == 1)
@@ -22,9 +23,6 @@ void hash_table_print(const hash_table_t *ht)
 			roadrunner = roadrunner->next;
 			test = 1;
 		}
-		roadrunner = ht->array[index];
 	}
 	printf("}\n");
-
-
 }
