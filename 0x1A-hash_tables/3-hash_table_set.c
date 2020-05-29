@@ -19,7 +19,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		for (tmp = ht->array[index]; tmp; tmp = tmp->next)
 		{
 			if (strcmp(tmp->key, key) == 0)
-				return (0);
+			{
+				free(tmp->value);
+				tmp->value = strdup(value);
+				return (1);
+			}
 		}
 		roadrunner = ht->array[index];
 		new_hash_node = malloc(sizeof(hash_node_t));
