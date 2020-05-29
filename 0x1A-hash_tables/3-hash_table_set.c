@@ -8,7 +8,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *new_hash_node, *roadrunner;
+	hash_node_t *new_hash_node, *roadrunner, *tmp;
 	unsigned long int index;
 
 	if (!key || !*key)
@@ -16,6 +16,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((unsigned char *)key, ht->size);
 	if (ht->array[index])
 	{
+		for (tmp = ht->array[index]; tmp; tmp = tmp->next)
+		{
+			if (strcmp(tmp->key, key) == 0)
+				return (0);
+		}
 		roadrunner = ht->array[index];
 		new_hash_node = malloc(sizeof(hash_node_t));
 		if (!new_hash_node)
