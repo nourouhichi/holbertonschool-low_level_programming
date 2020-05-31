@@ -50,6 +50,8 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		return (0);
 	new->key = strdup(key);
 	new->value = strdup(value);
+	if (!new->key || !new->value)
+		return (0);
 	new->snext = ht->array[index];
 	ht->array[index] = new;
 	ht->shead = sort(&sorted_head, key,  value);
@@ -73,6 +75,8 @@ shash_node_t *sort(shash_node_t **head, const char *key, const char *value)
 		return (NULL);
 	new->key = strdup(key);
 	new->value = strdup(value);
+	if (!new->key || !new->value)
+		return (0);
 	if (!*head)
 	{
 		*head = new;
