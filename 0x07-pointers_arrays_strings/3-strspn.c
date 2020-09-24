@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include "stdio.h"
 /**
  * _strspn - checks the code for holberton students
  *@s:char
@@ -7,22 +8,16 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int n = 0;
-int i;
-<<<<<<< HEAD
-while(*s != ',')
-=======
-while (*s != ',')
->>>>>>> 811de4576fed1f458f809bbdc233f9212f7f2e87
+int j, i;
+unsigned int count = 0;
+
+for  (i = 0; accept[i] != '\0'; i++ )
 {
-for (i = 0; accept[i] != '\0'; i++)
-{
-if (*s == accept[i])
-{
-n++;
+	for (j = 0; s[j] != ' '; j++)
+	{
+		if (s[j] == accept[i])
+			count = count + 1;
+	}
 }
-}
-s++;
-}
-return (n);
+return (count);
 }
