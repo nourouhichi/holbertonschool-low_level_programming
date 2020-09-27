@@ -12,7 +12,7 @@ int i, x = size;
 
 if (!*array || size <= 0)
 return (-1);
-for (i = 0;  i  != x;)
+for (i = 0; i < x;)
 {
 if (array[i] == value)
 {
@@ -25,3 +25,4 @@ i++;
 }
 return (-1);
 }
+
