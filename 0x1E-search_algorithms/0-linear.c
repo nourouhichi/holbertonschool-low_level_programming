@@ -12,17 +12,11 @@ int i, x = size;
 
 if (!*array || size <= 0)
 return (-1);
-for (i = 0; i < x;)
+for (i = 0; i < x; i++)
 {
+printf("Value checked array[%d] = [%d]\n", i, array[i]);
 if (array[i] == value)
-{
-printf("Value checked array[%d] = [%d]\n", i, array[i]);
 return (i);
-}
-else
-printf("Value checked array[%d] = [%d]\n", i, array[i]);
-i++;
 }
 return (-1);
 }
-
